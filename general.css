@@ -3,25 +3,27 @@
 }
 
 h2 {
-  font-size: 80px;
+  font-size: 60px;
   padding-bottom: 20px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 24px;
   padding-inline-start: 10px;
 }
 
 p {
   padding-inline-start: 10px;
+  font-size: 20px;
 }
 
 body {
-  margin-inline-start: 10px;
+  margin-inline: 10px;
 }
 .overblik {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
+  place-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 340px));
   gap: 10px;
 }
 
