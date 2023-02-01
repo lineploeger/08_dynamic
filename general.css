@@ -60,3 +60,29 @@ img {
   background-color: lightgrey;
   font-size: 30px;
 }
+
+.grid_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_info img {
+  width: 60%;
+}
+
+.overview h2 {
+  font-size: 35px;
+}
+
+.kurv {
+  margin-inline: 200px;
+  margin-block: 100px;
+  background-color: lightgrey;
+  padding: 30px;
+}
+
+button {
+  background-color: rgb(255, 253, 253);
+  padding: 10px 30px 10px 30px;
+  border: none;
+}
