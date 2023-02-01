@@ -33,4 +33,29 @@ body {
 
 img {
   width: 100%;
+  object-fit: cover;
+}
+
+.prisnu {
+  color: red;
+  font-size: 20px;
+}
+
+.prisfor {
+  font-size: 15px;
+  text-decoration-line: line-through;
+}
+
+.produktbillede_solgt img {
+  opacity: 60%;
+}
+
+.udsolgt {
+  opacity: 100;
+  z-index: 10;
+  color: white;
+  padding: 10px;
+  margin-right: 200px;
+  background-color: lightgrey;
+  font-size: 30px;
 }
