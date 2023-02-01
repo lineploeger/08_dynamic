@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+}
+
+h2 {
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 25px;
+  padding-inline-start: 10px;
+}
+
+p {
+  padding-inline-start: 10px;
+}
+
+body {
+  margin-inline-start: 10px;
+}
+.overblik {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
+  gap: 10px;
+}
+
+.produkter {
+  border: solid lightgrey;
+}
+
+img {
+  width: 100%;
+}
