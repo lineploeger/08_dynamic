@@ -2,6 +2,25 @@
   margin: 0;
 }
 
+header ul {
+  display: flex;
+  margin-top: 10px;
+  flex-flow: wrap;
+  list-style: none;
+  margin-inline: 30px;
+  padding: 0;
+  justify-content: end;
+  gap: 0px;
+}
+
+header a {
+  font-size: 25px;
+  color: black;
+  padding-left: 100px;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
 h2 {
   font-size: 60px;
   padding-bottom: 20px;
@@ -101,6 +120,6 @@ button {
   color: black;
 }
 
-.kategoriliste ul {
+ul {
   list-style-type: none;
 }
