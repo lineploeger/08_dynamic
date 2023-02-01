@@ -95,15 +95,16 @@ img {
 }
 
 .kurv {
-  margin-inline: 200px;
-  margin-block: 100px;
-  border: lightgray solid 3px;
+  margin: 100px 100px 200px 100px;
+  background-color: #f7f7f7;
   padding: 30px;
 }
 
 button {
-  background-color: lightgray;
-  padding: 10px 30px 10px 30px;
+  background-color: black;
+  color: white;
+  padding: 2% 32% 2% 32%;
+  border: none;
 }
 
 /*kategori*/
@@ -150,9 +151,9 @@ dt {
 
 .tilbage {
   font-size: 25px;
+  background-color: #f7f7f7;
+  padding: 10px 30px 10px 30px;
+  border: black solid;
   color: black;
-  padding: 10px 20px 10px 20px;
-  margin-bottom: 20px;
   text-decoration: none;
-  background-color: lightgrey;
 }
