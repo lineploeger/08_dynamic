@@ -86,7 +86,8 @@ img {
 }
 
 .grid_info img {
-  width: 60%;
+  width: 70%;
+  margin-top: 20px;
 }
 
 .overview h2 {
@@ -96,14 +97,13 @@ img {
 .kurv {
   margin-inline: 200px;
   margin-block: 100px;
-  background-color: lightgrey;
+  border: lightgray solid 3px;
   padding: 30px;
 }
 
 button {
-  background-color: rgb(255, 253, 253);
+  background-color: lightgray;
   padding: 10px 30px 10px 30px;
-  border: none;
 }
 
 /*kategori*/
@@ -122,4 +122,37 @@ button {
 
 ul {
   list-style-type: none;
+}
+
+form,
+button {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.kurv p {
+  font-size: 20px;
+}
+
+.kurv h3 {
+  font-size: 30px;
+  padding-top: 40px;
+}
+
+dd {
+  font-size: 20px;
+}
+
+dt {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.tilbage {
+  font-size: 25px;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-color: lightgrey;
 }
