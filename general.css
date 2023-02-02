@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+h4 {
+  font-weight: 100;
+}
+
 header ul {
   display: flex;
   margin-top: 10px;
@@ -13,6 +17,9 @@ header ul {
   gap: 0px;
 }
 
+header li:hover {
+  transform: scale(1.1);
+}
 header a {
   font-size: 25px;
   color: black;
@@ -24,11 +31,13 @@ header a {
 h2 {
   font-size: 60px;
   padding-bottom: 20px;
+  font-weight: 300;
 }
 
 .produkter h3 {
   font-size: 24px;
   padding-inline-start: 10px;
+  font-weight: 400;
 }
 
 .produkter p {
@@ -117,6 +126,10 @@ button {
   margin-inline: 120px;
   background-color: #f7f7f7;
   text-align: center;
+}
+
+.kategoriliste li:hover {
+  transform: scale(1.1);
 }
 
 .kategoriliste a {
