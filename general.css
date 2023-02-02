@@ -90,9 +90,11 @@ img {
   font-size: 30px;
 }
 
-.grid_info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media (min-width: 900px) {
+  .grid_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .grid_info img {
@@ -120,12 +122,18 @@ button {
 /*kategori*/
 
 .kategoriliste {
-  column-count: 2;
   margin-top: 70px;
   padding-block: 20px;
-  margin-inline: 120px;
+  margin-inline: 50px;
   background-color: #f7f7f7;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  .kategoriliste {
+    column-count: 2;
+    margin-inline: 120px;
+  }
 }
 
 .kategoriliste li:hover {
@@ -177,4 +185,8 @@ dt {
   border: black solid;
   color: black;
   text-decoration: none;
+}
+
+select {
+  padding: 8px;
 }
