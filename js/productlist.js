@@ -14,21 +14,17 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector("h3").textContent = product.productdisplayname;
-  copy.querySelector(".pris").textContent = product.price;
-  copy.querySelector(".prisnu").textContent = product.price;
-  copy.querySelector(".prisfor").textContent = product.price;
+  let nyPris = product.price - product.discount;
+  copy.querySelector(".prisnu").textContent = nyPris + ",-";
+
+  if (product.discount) {
+    copy.querySelector(".prisfor").textContent = "Pris før: " + product.price + ",-";
+  }
 
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-
-  /*
-  if (product.discount) {
-    //produktet er på tilbud
-    copy.querySelector("pris").classlist.add(".prisfor");
-  }
-  */
 
   copy.querySelector(".produktbillede").setAttribute("href", `product.html?id=${product.id}`);
 
   //husk at append
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".overblik").appendChild(copy);
 }
