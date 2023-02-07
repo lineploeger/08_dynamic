@@ -27,6 +27,8 @@ function showProduct(product) {
   }
   */
 
+  copy.querySelector(".produktbillede").setAttribute("href", `product.html?id=${product.id}`);
+
   //husk at append
   document.querySelector("main").appendChild(copy);
 }
