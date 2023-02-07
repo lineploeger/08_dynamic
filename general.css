@@ -40,11 +40,6 @@ h2 {
   font-weight: 400;
 }
 
-.produkter p {
-  padding-inline-start: 10px;
-  font-size: 20px;
-}
-
 body {
   margin-inline: 10px;
 }
@@ -52,12 +47,15 @@ body {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(auto-fill, minmax(150px, 340px));
+
   gap: 10px;
 }
 
 .produkter {
   border: solid #f7f7f7;
   background-color: #f7f7f7;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 img {
@@ -68,24 +66,40 @@ img {
 .prisnu {
   color: rgb(180, 11, 11);
   font-size: 20px;
+  padding-inline-start: 10px;
 }
 
 .prisfor {
   font-size: 15px;
+  color: rgb(80, 80, 80);
   text-decoration-line: line-through;
+  padding-inline-start: 10px;
 }
 
 .produktbillede_solgt img {
   opacity: 60%;
 }
 
-.udsolgt {
+.tilbud {
   position: absolute;
+  top: 0px;
+  left: 0px;
   opacity: 100;
   z-index: 10;
   color: white;
   padding: 10px;
-  margin-right: 200px;
+  background-color: black;
+  font-size: 30px;
+}
+
+.udsolgt {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 100;
+  z-index: 10;
+  color: white;
+  padding: 10px;
   background-color: black;
   font-size: 30px;
 }
@@ -93,6 +107,7 @@ img {
 @media (min-width: 900px) {
   .grid_info {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -160,7 +175,15 @@ button {
   font-size: 20px;
 }
 
-.kurv p {
+.pris {
+  color: rgb(180, 11, 11);
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.brand,
+.color {
   font-size: 20px;
 }
 
@@ -189,4 +212,8 @@ dt {
 
 select {
   padding: 8px;
+}
+
+.hide {
+  display: none;
 }

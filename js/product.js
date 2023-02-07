@@ -12,5 +12,15 @@ function showProduct(product) {
   document.querySelector(".kurv .brand").textContent = product.brandname;
   document.querySelector(".kurv .color").textContent = product.basecolour;
   document.querySelector(".kurv .pris").textContent = product.price + ",-";
+
+  /*
+  let nyPris = product.price - product.discount;
+  copy.querySelector(".kurv .prisnu").textContent = nyPris + ",-";
+
+  if (product.discount) {
+    copy.querySelector("kurv .prisfor").textContent = "Before: " + product.price + ",-";
+  }
+  */
+
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }

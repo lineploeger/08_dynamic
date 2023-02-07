@@ -18,7 +18,15 @@ function showProduct(product) {
   copy.querySelector(".prisnu").textContent = nyPris + ",-";
 
   if (product.discount) {
-    copy.querySelector(".prisfor").textContent = "Pris før: " + product.price + ",-";
+    copy.querySelector(".prisfor").textContent = "Before: " + product.price + ",-";
+  }
+
+  if (!product.soldout) {
+    copy.querySelector(".udsolgt").classList.add("hide");
+  }
+
+  if (!product.discount) {
+    copy.querySelector(".tilbud").classList.add("hide");
   }
 
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
