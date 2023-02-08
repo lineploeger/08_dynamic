@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 h4 {
@@ -31,6 +32,7 @@ header a {
 h2 {
   font-size: 60px;
   padding-bottom: 20px;
+  margin-inline-start: 20px;
   font-weight: 300;
 }
 
@@ -40,14 +42,25 @@ h2 {
   font-weight: 400;
 }
 
-body {
-  margin-inline: 10px;
+footer {
+  background-color: #cde2f7;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-inline-start: 0;
+  margin-top: 60px;
 }
+
+.fod {
+  padding-inline-start: 20px;
+  color: black;
+}
+
 .overblik {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(auto-fill, minmax(150px, 340px));
   gap: 15px;
+  margin-bottom: 50px;
 }
 
 .produkter {
@@ -114,6 +127,11 @@ img {
 
 .grid_info img {
   width: 70%;
+  margin-top: 20px;
+}
+
+.overview {
+  margin-inline-start: 20px;
   margin-top: 20px;
 }
 
@@ -196,6 +214,7 @@ dt {
 
 .tilbage {
   font-size: 25px;
+  margin-inline-start: 20px;
   background-color: #f7f7f7;
   padding: 10px 30px 10px 30px;
   border: black solid;
