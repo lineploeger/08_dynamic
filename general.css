@@ -47,8 +47,7 @@ body {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(auto-fill, minmax(150px, 340px));
-
-  gap: 10px;
+  gap: 15px;
 }
 
 .produkter {
@@ -75,6 +74,7 @@ img {
   color: rgb(80, 80, 80);
   text-decoration-line: line-through;
   padding-inline-start: 10px;
+  margin-bottom: 10px;
 }
 
 .produktbillede_solgt img {
@@ -85,11 +85,9 @@ img {
   position: absolute;
   top: 2px;
   right: 2px;
-  opacity: 100;
-  z-index: 10;
   border-radius: 50%;
   color: rgb(180, 11, 11);
-  padding: 20px;
+  padding: 20px 15px 20px 15px;
   background-color: #f7f7f7;
   font-size: 20px;
 }
