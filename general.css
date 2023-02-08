@@ -175,9 +175,12 @@ button {
 }
 
 @media (min-width: 800px) {
+  .kategoriliste li {
+    display: none;
+  }
   .kategoriliste {
-    column-count: 2;
     margin-inline: 120px;
+    column-count: 2;
   }
 }
 
@@ -187,16 +190,15 @@ button {
 
 .kategoriliste a {
   font-size: 40px;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column-reverse;
   text-decoration: none;
   color: black;
 }
 
 .kategoriliste li {
   padding-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 form,
@@ -254,4 +256,8 @@ select {
 
 .hide {
   display: none;
+}
+
+li {
+  list-style: none;
 }
