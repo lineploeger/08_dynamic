@@ -16,6 +16,7 @@ function showProduct(product) {
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
+
   copy.querySelector("h3").textContent = product.productdisplayname;
   let nyPris = product.price - product.discount;
   copy.querySelector(".prisnu").textContent = nyPris + ",-";
