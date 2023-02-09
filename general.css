@@ -88,6 +88,12 @@ img {
   font-weight: 200;
 }
 
+.kurv .prisnu {
+  font-size: 30px;
+  padding-inline-start: 0;
+  padding-top: 10px;
+}
+
 .prisfor {
   font-size: 15px;
   color: rgb(80, 80, 80);

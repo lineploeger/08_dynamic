@@ -11,6 +11,7 @@ function showProduct(product) {
   document.querySelector(".kurv h3").textContent = product.productdisplayname;
   document.querySelector(".kurv .brand").textContent = product.brandname;
   document.querySelector(".kurv .color").textContent = product.basecolour;
+  document.querySelector(".kurv .prisnu").textContent = product.price - product.discount + ",-";
 
   /*
   let nyPris = product.price - product.discount;
